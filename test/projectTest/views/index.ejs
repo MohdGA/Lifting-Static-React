@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body> 
+   <% if(user){ %>
+        <h1>Welcome to the website <%=user.username %></h1>
+        <a href="/auth/sign-out">Sign Out</a>
+        <p><a href="/products">products Page</a></p>
+    <% }else{ %>
+        <h1>Welcome to the website guest</h1> 
+        <a href="/auth/sign-up">Sign Up</a>
+        <a href="/auth/sign-in">Sign In</a>
+   <% } %>
+   
+   <p><a href="/vip-lounge">Get into vip lounge</a></p>
+   
+
+</body>
+</html>

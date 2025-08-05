@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+<body>
+    <h3>Show Page!</h3>
+
+    <ul>
+      <li> <%= foundSouq.name %> </a> </li>
+      <li> <%= foundSouq.description %> </li>
+      <li> <%= foundSouq.price %> </li>
+    </ul>
+
+    <a href="/souq/<%= foundSouq._id %>/edit">Edit</a>
+
+    <form action="/souq/<%= foundSouq._id %>?_method=DELETE" method="post">
+        <button type="submit">DELETE</button>
+    </form>
+</body>
+</html>

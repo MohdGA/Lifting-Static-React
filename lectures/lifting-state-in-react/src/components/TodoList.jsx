@@ -1,8 +1,8 @@
 const TodoList = (props) => {
   return (
     <ul>
-      {props.todos.map((todo, index) => {
-        return <li key={index}>{todo}</li>;
+      {props.todos.map((todos, index) => {
+        return <li key={index}>{todos}</li>;
       })}
     </ul>
   );

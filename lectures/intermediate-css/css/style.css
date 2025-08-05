@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: gray;
+  /* Use a system font, if none are available use an available sans-sarif font */
+  font-family: system-ui, sans-serif;
+  /* Ensures full height compatibility across devices */
+  min-height: 100dvh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+/* input[type='number']{
+
+} */
+
+ul.top-level-list:hover{
+  cursor:pointer;
+}
+
+h3::first-letter {
+  font-size: 60px;
+}
+
+/* Selects all <li> tags that are direct children of a <ul.top-level-list> */
+
+.top-level-list > li {
+  border: solid 1px orange;
+}
+
+div + div{
+  color:green;
+}
+
+input ~ input {
+  border: 1px solid rgb(0, 212, 46);
+}
+/* Set the width of an element to the entire width of the viewport */
+div {
+  width: 100vw;
+}
+
+/* Set the font size of an element to 2 times the root font size */
+p {
+  font-size: rem;
+}
+
+/* Set the margin of an element to 10% of its container element */
+input {
+  margin: 10%;
+}
+

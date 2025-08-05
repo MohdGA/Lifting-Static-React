@@ -1,0 +1,14 @@
+<!-- views/show.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= item.name %> Shop</title>
+</head>
+<body>
+    <h1>Welcome to the <%= item.name %> Shop</h1>
+    <p> <%= item.name %> <%= item.qty === 1 || item.qty === 0 ? "is" : "are" %>  <%=item.qty %> left</p>
+</body>
+</html>

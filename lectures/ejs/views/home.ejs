@@ -1,0 +1,18 @@
+<%- include('./partials/html-head') %>
+<%- include('./partials/nav') %>
+
+  <% let showMessage = true; %> 
+  <% let favoriteNumber = 1%>
+
+  <h1>We are rendering an EJS page!</h1>
+  <h2><%= showMessage %></h2>
+  <p>My favorite Number: <%= favoriteNumber %></p>
+  <p><%= msg %>, <%= player.name %></p>
+
+  <ul> <% inventory.forEach((item, index) => { %>
+    <a href="/<%=index %>" target="_blank">
+    <li> <%= item.name %>: <%= item.qty %> </li> 
+</a>
+<%  }) %>
+  </ul>
+<%- include('./partials/footer') %>
